@@ -40,9 +40,19 @@
                 height: auto;
             }
             /* Push images to the right */
-            img {
+            .right-img {
                 margin-left: auto;
                 display: block;
+            }
+
+            .darken-image{
+                filter: brightness(50%);
+            }
+
+            .round-img-container{
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
         </style>
 
@@ -78,18 +88,17 @@
             </ol>
             <div class="carousel-inner">
                <div class="carousel-item active">
-                  <img class="img-responsive" width="100%" height="100%" src="../static/images/Blue_Health.png" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                  <img class="img-fluid darken-image" width="100%" style="object-fit: cover" src="../static/images/Blue_Health.png" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
                      <rect width="100%" height="100%" fill="#777" />
                   </img>
                   <div class="container">
                      <div class="carousel-caption text-left">
                         <h2>Want to know more about instant noodle consumption?  You're in the Right Place.</h2>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
                      </div>
                   </div>
                </div>
                <div class="carousel-item">
-                  <img class="img-responsive" width="100%" height="100%" src="../static/images/Blue_Wealth.png" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                  <img class="img-fluid darken-image" width="100%" style="object-fit: cover;" src="../static/images/Blue_Wealth.png" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
                      <rect width="100%" height="100%" fill="#777" />
                   </svg>
                   <div class="container">
@@ -101,14 +110,12 @@
                   </div>
                </div>
                <div class="carousel-item">
-                  <img class="img-responsive" width="100%" height="100%" src="../static/images/Blue_Noodle.png" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
+                  <img class="img-fluid darken-image" width="100%" style="object-fit: cover;" src="../static/images/Blue_Noodle.png" preserveAspectRatio="xMidYMid slice" focusable="false" role="img">
                      <rect width="100%" height="100%" fill="#777" />
-                  </svg>
+                  </img>
                   <div class="container">
                      <div class="carousel-caption text-right">
                         <h2>Who doesn't love noodles?</h2>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
                      </div>
                   </div>
                </div>
@@ -126,13 +133,8 @@
     <h2 style="text-align: center;">Instant Insights: Noodles, Health, & Wealth. </h2>
     <h4 style="text-align: center;">Project Group 2: Jack & Kaylin Slattery</h4>
     <div class="container" style="margin-top: 50px;">
-        <div class="row">
-            <div class="col-md-6">
-                <p style="text-align: left;">The project provides a plethora of information and data regarding instant noodle consumption per capita and its relationship with various health- and wealth-related metrics.</p>
-            </div>
-            <div class="col-md-6">
-                <img src="https://via.placeholder.com/300" alt="Sample Image" class="img-fluid">
-            </div>
+        <div style="display: flex; align-items: center">
+            <p style="text-align: center; padding-bottom: 3em;">"Noodles, Health, and Wealth" is an innovative data analytics project that explores the intriguing correlations between instant noodle consumption and key societal indicators: health, happiness, and Gross Domestic Product (GDP) across various countries. This project aims to uncover patterns and insights from global data, offering a unique perspective on how a simple, ubiquitous food item like instant noodles relates to broader economic and health trends</p>
         </div>
     </div>
 
@@ -152,35 +154,29 @@
             <!-- Three columns of text below the carousel -->
             <div class="row">
                <div class="col-lg-4">
-                  <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
-                     <title>Placeholder</title>
-                     <rect width="100%" height="100%" fill="#777" />
-                     <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-                  </svg>
+                  <div class="round-img-container">
+                    <img class="rounded-circle" width="140" height="140" src="../static/images/Blue_Noodle.png" preserveAspectRatio="xMidYMid slice" style="align-self: center"></img>
+                  </div>
                   <h2>Learn about Noodles!</h2>
-                  <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+                  <p>View insights about instant noodle consumption around the world.</p>
                   <p><a class="btn btn-secondary" href="/principles/noodles" role="button">View details &raquo;</a></p>
                </div>
                <!-- /.col-lg-4 -->
                <div class="col-lg-4">
-                  <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
-                     <title>Placeholder</title>
-                     <rect width="100%" height="100%" fill="#777" />
-                     <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-                  </svg>
+                  <div class="round-img-container">
+                    <img class="rounded-circle" width="140" height="140" src="../static/images/Blue_Health.png" preserveAspectRatio="xMidYMid slice" style="align-self: center"></img>
+                  </div>
                   <h2>Noodles x Health</h2>
-                  <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+                  <p style="padding-top: 0.5em">View insights about the intersection of instant noodle consumption and health</p>
                   <p><a class="btn btn-secondary" href="/principles/health" role="button">View details &raquo;</a></p>
                </div>
                <!-- /.col-lg-4 -->
                <div class="col-lg-4">
-                  <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140">
-                     <title>Placeholder</title>
-                     <rect width="100%" height="100%" fill="#777" />
-                     <text x="50%" y="50%" fill="#777" dy=".3em">140x140</text>
-                  </svg>
+                    <div class="round-img-container">
+                        <img class="rounded-circle" width="140" height="140" src="../static/images/Blue_Wealth.png" preserveAspectRatio="xMidYMid slice" style="align-self: center"></img>
+                    </div>
                   <h2>Noodles x Wealth</h2>
-                  <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                  <p style="padding-top: 1em">View insights about how wealth affects instant noodle consumption.</p>
                   <p><a class="btn btn-secondary" href="/principles/wealth" role="button">View details &raquo;</a></p>
                </div>
                <!-- /.col-lg-4 -->
@@ -192,13 +188,17 @@
 <!-- EXPLORATION QUESTIONS  -->
         <h1 style="text-align: center;">Exploration Questions</h1>
     <div class="container" style="margin-top: 50px;">
-        <div class="row">
-            <div class="col-md-6">
-                <p style="text-align: left;">Temporary Text Placeholder.</p>
-            </div>
-            <div class="col-md-6">
-                <img src="https://via.placeholder.com/300" alt="Sample Image" class="img-fluid">
-            </div>
+        <div style="display: flex; flex-direction: column; align-items: left; justify-content: center">
+            <p>Question 1: How does instant noodle consumption vary by country? By continent?</p>
+            <p>Question 2: What countries eat the most and least instant noodles? </p>
+            <p>Question 3: What continents eat the most and least instant noodles? </p>
+            <p>Question 4: what is the difference between 2018-2022 noodle consumption per country? Which had the highest and lowest differences in instant noodle consumption per capita?</p>
+            <p>Question 5: What is the relationship between instant noodle consumption per capita and health-related metrics across these countries?</p>
+            <p>Question 6: What is the relationship between instant noodle consumption per capita and happiness?</p>
+            <p>Question 7: What is the relationship between instant noodle consumption per capita and life expectancy?</p>
+            <p>Question 8: What is the relationship between instant noodle consumption per capita and wealth-related metrics across these countries?</p>
+            <p>Question 9: What is the relationship between instant noodle consumption per capita and GDP across these countries?</p>
+            <p>Question 10: Does the relationship between instant noodle consumption per capita and GDP differ by continent? If so, how?</p>
         </div>
     </div>
 
@@ -209,17 +209,9 @@
 
 <!-- Data SOURCES -->
     <h1 style="text-align: center;">Data Sources</h1>
-    <div class="container" style="margin-top: 50px;">
-        <div class="row">
-            <div class="col-md-6">
-                <p style="text-align: left;">Temporary Text Placeholder.</p>
-                <ul> <a href="https://www.kaggle.com/datasets/fortuneuwha/world-instant-noodles-consumption-2022/download?datasetVersionNumber=1"> World Instant Noodle Consumption Per Capita (from Kaggle) </a></ul>
-                <ul> <a href="https://www.kaggle.com/datasets/sazidthe1/global-happiness-scores-and-factors/download?datasetVersionNumber=1"> Global Happiness Scores & Factors (from Kaggle) </a> </ul>
-            </div>
-            <div class="col-md-6">
-                <img src="https://via.placeholder.com/300" alt="Sample Image" class="img-fluid">
-            </div>
-        </div>
+    <div class="container" style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+        <ul> <a href="https://www.kaggle.com/datasets/fortuneuwha/world-instant-noodles-consumption-2022/download?datasetVersionNumber=1"> World Instant Noodle Consumption Per Capita (from Kaggle) </a></ul>
+        <ul> <a href="https://www.kaggle.com/datasets/sazidthe1/global-happiness-scores-and-factors/download?datasetVersionNumber=1"> Global Happiness Scores & Factors (from Kaggle) </a> </ul>
     </div>
 
     <!-- Grey Spacer (Rectangle) -->
@@ -233,13 +225,9 @@
     <!-- Data Journey/Caveats -->
     <h1 style="text-align: center;">Data Journey & Caveats</h1>
     <div class="container" style="margin-top: 50px;">
-        <div class="row">
-            <div class="col-md-6">
-                <p style="text-align: left;">Temporary Text Placeholder.</p>
-            </div>
-            <div class="col-md-6">
-                <img src="https://via.placeholder.com/300" alt="Sample Image" class="img-fluid">
-            </div>
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center">
+            <p style="text-align: left;">The process of deriving insights from data related to instant noodle consumption, health metrics, and wealth-related indicators involves a comprehensive data journey. The first step was to identify the relevant and trustworthy data sources relating to instant noodle consumption, health-related metrics, and wealth-related metrics. Kaggle was an invaluable tool in the journey to find trustworthy and clean data sources. Other key steps in the process were importing, cleaning, and exploring the data. Initial exploratory visualizations helped to identify potential patterns in the data and areas of focus. After narrowing down a focus to examine instant noodle consumption and comparing it to health- and wealth-related metrics, we began creating visualizations to extract informative and meaningful insights from the data. Finally, compiling the project helped us to draw applicable conclusions and inform a diverse audience of people interested in the relationships between instant noodle consumption, health, and wealth. </p>
+            <p style="text-align: left;">The journey on any data visualization project would not be complete without some challenges or caveats. One of the first difficulties was identifying a dataset with health- and wealth-related metrics. Ideally, we wish obesity information or other health-centric factors were included, but overall the global happiness scores and factors had many metrics and included the same years as the instant noodle consumption dataset. An additional caveat is that the instant noodle consumption dataset is limited to only the countries in the dataset. However, having data on multiple years for each country enabled a complex data analysis to be conducted. </p>
         </div>
     </div>
 
@@ -252,10 +240,17 @@
     <div class="container" style="margin-top: 50px;">
         <div class="row">
             <div class="col-md-6">
-                <p style="text-align: left;">Temporary Text Placeholder.</p>
+                <h3>Jack Slattery</h3>
+                <p style="text-align: left;">Year: Senior</p>
+                <p style="text-align: left;">Major: Finance</p>
+                <p style="text-align: left;">Minor: Computing and Digital Technologies</p>
+                <h3 style="padding-top: 1em;">Kaylin Slattery</h3>
+                <p style="text-align: left;">Year: Senior</p>
+                <p style="text-align: left;">Major: Business Analytics</p>
+                <p style="text-align: left;">Minor: Technology Ethics</p>
             </div>
             <div class="col-md-6">
-                <img src="https://via.placeholder.com/300" alt="Sample Image" class="img-fluid">
+                <img src="../static/images/principles_about_us.jpg" alt="Sample Image" class="img-fluid img-right">
             </div>
         </div>
     </div>
@@ -267,13 +262,8 @@
     <!-- Learnings & Conclusions -->
     <h1 style="text-align: center;">Learnings & Conclusions</h1>
     <div class="container" style="margin-top: 50px;">
-        <div class="row">
-            <div class="col-md-6">
-                <p style="text-align: left;">Temporary Text Placeholder.</p>
-            </div>
-            <div class="col-md-6">
-                <img src="https://via.placeholder.com/300" alt="Sample Image" class="img-fluid">
-            </div>
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center">
+                <p style="text-align: center;">Overall, the findings can only be generalized to the countries within the dataset, but some key insights can be derived from the analysis. First, Asia consumes instant noodles at the highest rates per capita than other continents, and Europe and Oceania consume instant noodles at the lowest rates. China is the country with the highest instant noodle consumption per capita which is much higher than any other country in the dataset. Although instant noodle consumption increased over time, there were unclear relationships between instant noodle consumption and certain wealth-related metrics. For example, instant noodle consumption continued to increase even as average GDP per capita increased, although GDP per capita increased at a higher rate. Further economic analysis could be conducted to determine if the increase in instant noodle consumption was related to a substitution or income effect. As for health-related metrics, many of the health factors were variable over the time frame of 2018-2022 while noodle consumption increased steadily across the period. Further analysis is necessary to determine additional information regarding those relationships. A health-metric comparison between the U.S. and China highlighted that the United States consumes fewer noodles than China, and the U.S. had higher happiness scores and generosity than China. Although many of these conclusions are fascinating regarding the relationships between noodles, health, and wealth, it is imperative to note that correlation does not imply causation.</p>
         </div>
     </div>
 
@@ -282,14 +272,20 @@
 
 
     <!-- Demo Video -->
-    <h1 style="text-align: center;">Demo Videos</h1>
+    <h1 style="text-align: center;" id="demo_videos">Demo Videos</h1>
     <div class="container" style="margin-top: 50px;">
-        <div class="row">
-            <div class="col-md-6">
-                <p id="demo_videos" style="text-align: left;">Temporary Text Placeholder.</p>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div style="display: flex; flex-direction: column; align-items: center; width=50%">
+                <h3>Website Demo</h3>
+                <video width="70%" height="300px" controls>
+                    <source src="../static/Website Demo.mp4" type="video/mp4">
+                </video>
             </div>
-            <div class="col-md-6">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/2pFTJN1tF8A?si=dS56DlhpBvC1R-K-" frameborder="0" allowfullscreen></iframe>
+            <div style="display: flex; flex-direction: column; align-items: center; width=50%">
+                <h3>Code Walkthrough</h3>
+                <video width="70%" height="300px" controls>
+                    <source src="../static/Project Code Walkthrough.mp4" type="video/mp4">
+                </video>
             </div>
         </div>
     </div>
@@ -313,3 +309,4 @@
       <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
    </body>
 </html>
+
